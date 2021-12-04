@@ -209,7 +209,7 @@
     background-color: #fff;
 }
 .image{
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin: 60px;
     margin-top: 100px;
     width: 60%;
@@ -220,7 +220,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(https://image.freepik.com/free-photo/job-interview-candidate-selection-employment_342744-729.jpg) ;
-
 }
 .first-title{
   cursor: pointer;
@@ -315,6 +314,9 @@
 
 
   @media (max-width:600px) {
+    #images1{
+      background-size: cover;
+    }
     .banner h1{
       font-size: 1.5rem;
       width: 400px;
