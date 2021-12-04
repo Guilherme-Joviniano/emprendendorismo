@@ -166,7 +166,7 @@
     height: 60px;
     border: solid;
     box-shadow: 0 0 0 inset #00000000;
-    transition: .5s all ease-in-out;
+    transition: .5s all cubic-bezier(0.5, 0.01, 0, 0.9);
     border-color: #fff;
 }
 .button:hover{
