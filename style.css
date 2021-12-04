@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,300;0,700;0,900;1,300&display=swap');
-
+@keyframes transform {
+  from{
+    transform: scaleX(0);
+  }
+  to{
+    transform: scaleX(1);
+  }
+}
+@keyframes background {
+  from{
+    background-color: darkblue;
+  }
+  to{
+    background-color: var(--purple);
+  }
+}
 * {
     box-sizing: border-box;
   }
@@ -15,6 +30,7 @@
 :root{
  --gold: #FDB927;
  --purple: #552583;
+ --contrast: #F58225;
 }
 ::-webkit-scrollbar {
 	width: 10px;
@@ -180,27 +196,110 @@
     overflow-y: hidden;
     height: auto;
     display: flex;
+    flex-direction: row;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .text:nth-child(1){
-    width: 50%;
-    height: 600px;
+    font-family: 'Raleway', sans-serif;
+    width: 40%;
+    height: 400px;
+    margin: 60px;
+    margin-top: 120px;
     background-color: #fff;
 }
 .image{
-    width: 50%;
-    height: 600px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 60px;
+    margin-top: 100px;
+    width: 60%;
+    height: 400px;
     background-color: #fff;
 }
+#images1{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://image.freepik.com/free-photo/job-interview-candidate-selection-employment_342744-729.jpg) ;
 
+}
+.first-title{
+  cursor: pointer;
+  width: auto;
+}
+.first-title::after{
+  content: '';
+  display: block;
+  position: relative;
+  top: -13px;
+  width: 97%;
+  height: 12px;
+  background-color: #562583a3;
+  left: 0;
+  bottom: -3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s ease-in-out;
+}
+.first-title:hover::after{
+  transform: scaleX(1);
+}
+.second-section{
+  transform:  skewY(-3deg);
+  height: 70vh;
+  background-color: #174EA6;
+}
+.third-section{
+  font-family: 'Raleway', sans-serif;
+  height: 80vh;
+}
 
+.container{
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  height: 80%;
+  width: 80%;
+}
+.card{
+  transform:  skewY(3deg);
+  border-radius: 20px;
+  margin-top: 10%;
+    padding: 20px;
+    background-color: darkblue;
+    height: 100%;
+}
+.card h1,.card p{
+  color: #fff;
+  text-align: center;
+}
+.card p{ 
+  font-size: 1.5rem;
+}
+.highlight{
+ /* only animation-duration here is required, rest are optional (also animation-name but it will be set on hover)*/
+ animation-duration: 1s; /* same as transition duration */
+ animation-timing-function: linear; /* kind of same as transition timing */
+ animation-delay: 0ms; /* same as transition delay */
+ animation-iteration-count: 1; /* set to 2 to make it run twice, or Infinite to run forever!*/
+ animation-direction: normal; /* can be set to "alternate" to run animation, then run it backwards.*/
+ animation-fill-mode: none; /* can be used to retain keyframe styling after animation, with "forwards" */
+ animation-play-state: running; /* can be set dynamically to pause mid animation*/
+}
+.highlight-text2{
+  z-index: 80;
+}
 
-
-
-
-
-
+.highlight-text{
+  animation: background 2s;
+  background-color: var(--purple);
+}
+.title{
+  margin-top: 40px;
+  font-size: 3.5rem;
+  text-align: center;
+}
 
 
 
@@ -216,6 +315,36 @@
 
 
   @media (max-width:600px) {
+    .banner h1{
+      font-size: 1.5rem;
+      width: 400px;
+    }
+    .banner h1 span{
+      font-size: 3rem;
+    }
+    .first-section{
+      overflow-y: hidden;
+      max-height: calc(100vh + 400px);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+  }
+  .first-title{
+    width: 200px;
+  }
+.second-section{
+  height: 800px;
+}
+  .container{
+
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .card{
+    height: 200px;
+  }
     .scrolling-active {
         background-color: #4d4d4d00 !important;
         box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
