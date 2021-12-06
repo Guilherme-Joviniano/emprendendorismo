@@ -25,3 +25,12 @@ function changeimage(number){
         image.style.backgroundImage = "url('https://image.freepik.com/free-photo/money-writes-with-white-chalk-is-hand-draw-concept_1150-19554.jpg')"
     }
 }
+function show1(){
+    document.getElementsByClassName('fornecedores-locais')[0].style.display = "none"
+    document.getElementsByClassName('grandes-fornecedores')[0].style.display = "flex"; 
+}
+function show2(){
+    document.getElementsByClassName('grandes-fornecedores')[0].style.display = "none"; 
+    document.getElementsByClassName('fornecedores-locais')[0].style.display = "flex"
+
+}

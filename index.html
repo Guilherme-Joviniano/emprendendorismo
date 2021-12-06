@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cb13db9242.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
     <title>Document</title>
   </head>
@@ -34,48 +38,125 @@
       <div class="button"><a href="#first">Saiba Mais</a></div>
     </div>
     <div class="first-section" id="first">
-        <div class="text">
-            <div class="first-quotes">
-                <h1 class="first-title" onclick="changeimage(1)">Invista no seu negocio!</h1>
-                <p>Primeiramente você vai necessitar de dinheiro para investir no seu negocio</p>
-            </div>
-            <div class="first-quotes">
-                <h1 class="first-title" onclick="changeimage(2)">Entrevistas</h1>
-                <p>Faça entrecistas de emprego nas àreas em que você se interresa</p>
-            </div>
-            <div class="first-quotes">
-                <h1 class="first-title" onclick="changeimage(3)">Com a Renumeração</h1>
-                <p>Com o dinheiro da renumeração invista em seu proprio negocio!</p>
-           </div>
+      <div class="text">
+        <div class="first-quotes">
+          <h1 class="first-title" onclick="changeimage(1)">
+            Invista no seu negocio!
+          </h1>
+          <p>
+            Primeiramente você vai necessitar de dinheiro para investir no seu
+            negocio
+          </p>
+        </div>
+        <div class="first-quotes">
+          <h1 class="first-title" onclick="changeimage(2)">Entrevistas</h1>
+          <p>Faça entrecistas de emprego nas àreas em que você se interresa</p>
+        </div>
+        <div class="first-quotes">
+          <h1 class="first-title" onclick="changeimage(3)">
+            Com a Renumeração
+          </h1>
+          <p>Com o dinheiro da renumeração invista em seu proprio negocio!</p>
+        </div>
+      </div>
+      <div class="image" id="images1"></div>
     </div>
-    <div class="image" id="images1"></div>
-  </div>
-  <div class="second-section"  id="second">
-    <div class="container">
-      <div class="card">
-        <h1>Nichos</h1>
+    <div class="second-section" id="second">
+      <div class="container">
+        <div class="card">
+          <h1>Nichos</h1>
+          <p>
+            Defina os <span id="text1" class="highlight">nichos</span> onde você
+            ira seguir (roupas, acessórios, cosméticos, etc)
+          </p>
+        </div>
+        <div class="card">
+          <h1>Publico Alvo</h1>
+          <p>
+            Pesquisa sobre o seu público alvo e procure saber o que é
+            <span class="highlight" id="text2">necessário</span> para abrir um
+            negócio
+          </p>
+        </div>
+        <div class="card">
+          <h1>Planejamento</h1>
+          <p>
+            Se planeje para abrir seu negócio, vá atrás de saber qual a
+            <span class="highlight" id="text3">documentação</span> necessário
+            para isso
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="third-section" id="third">
+      <div>
+        <h1 class="title">Fornecedores</h1>
+      </div>
+      <div class="text-centralize">
         <p>
-          Defina os <span id="text1" class="highlight">nichos</span> onde  você ira seguir (roupas, acessórios, cosméticos, etc)
+          Agora é hora de ir atrás dos fornecedores! <br />
+          Você pode escolher grandes fornecedores ou fornecedores locais.
         </p>
       </div>
-      <div class="card">
-        <h1>Publico Alvo</h1>
-        <p>
-          Pesquisa sobre o seu público alvo e procure saber o que é <span class="highlight" id="text2">necessário</span> para abrir um negócio 
-        </p>
+      <div class="container-buttons">
+        <div class="button btn2">
+          <a onclick="show1()">Grandes Fornecedores</a>
+        </div>
+        <div class="button btn2">
+          <a onclick="show2()">Fornecedores Locais</a>
+        </div>
       </div>
-      <div class="card">
-        <h1>Planejamento</h1>
-        <p>
-          Se planeje para abrir seu negócio, vá atrás de saber qual a <span class="highlight" id="text3">documentação</span> necessário para isso
-        </p>
+      <div class="grandes-fornecedores">
+        <div class="logo"><i class="fab fa-amazon"></i></div>
+        <div class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Magalu_-_novo_logo.png"
+            alt=""
+          />
+        </div>
+        <div class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aliexpress_logo.svg/2560px-Aliexpress_logo.svg.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="fornecedores-locais">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="560"
+              height="395"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=forncedores%20locais%20&t=&z=11&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a
+              href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"
+            ></a
+            ><br /><style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 395px;
+                width: 560px;
+              }</style
+            ><a href="https://www.embedgooglemap.net"
+              >google maps on my web site</a
+            ><style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 395px;
+                width: 560px;
+              }
+            </style>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="third-section" id="third">
-    <div>
-      <h1 class="title">Fornecedores</h1>
-    </div>
-  </div>
   </body>
 </html>

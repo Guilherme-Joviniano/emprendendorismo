@@ -12,7 +12,7 @@
     background-color: darkblue;
   }
   to{
-    background-color: var(--purple);
+    background-color: red;
   }
 }
 * {
@@ -171,6 +171,7 @@
     font-size: 4.5rem;
 }
 .button{
+  
     font-size: 2rem;
     cursor: pointer;
     font-family: 'Raleway';
@@ -185,7 +186,13 @@
     transition: .5s all cubic-bezier(0.5, 0.01, 0, 0.9);
     border-color: #fff;
 }
+.btn2{
+  font-size: 1.5rem;
+  background-color: var(--purple);
+  color: #fff;
+}
 .button:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border: none;
     box-shadow: 0 60px 0 inset var(--gold);
 }
@@ -292,17 +299,47 @@
 
 .highlight-text{
   animation: background 2s;
-  background-color: var(--purple);
+  background-color: red;
 }
 .title{
   margin-top: 40px;
   font-size: 3.5rem;
   text-align: center;
 }
-
-
-
-
+.text-centralize{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.container-buttons{
+  display: flex;
+  place-content: center;
+  gap: 20px;
+}
+.grandes-fornecedores{
+  display: none;
+  place-content: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+.fornecedores-locais{
+  padding: 60px;
+  display: none;
+  place-content: center;
+}
+.logo{
+  transition: .3s all ease-in-out;
+  filter: grayscale(100%);
+  cursor: pointer;
+  font-size: 3rem;
+}
+.logo:nth-child(2) img, .logo:nth-child(3) img{
+  max-width: 150px;
+  border-radius: 20px;
+}
+.logo:hover{
+  color: var(--contrast);
+  filter: none;
+}
 
 
 
@@ -314,6 +351,9 @@
 
 
   @media (max-width:600px) {
+    .btn2{
+      font-size: 1rem;
+    }
     #images1{
       background-size: cover;
     }
