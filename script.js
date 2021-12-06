@@ -27,10 +27,12 @@ function changeimage(number){
 }
 function show1(){
     document.getElementsByClassName('fornecedores-locais')[0].style.display = "none"
+    document.getElementsByClassName('third-section')[0].style.height = "80vh";
     document.getElementsByClassName('grandes-fornecedores')[0].style.display = "flex"; 
 }
 function show2(){
     document.getElementsByClassName('grandes-fornecedores')[0].style.display = "none"; 
+    document.getElementsByClassName('third-section')[0].style.height = "140vh";
     document.getElementsByClassName('fornecedores-locais')[0].style.display = "flex"
 
 }
